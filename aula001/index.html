@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <title>Filosofia em jquery</title>
+
+    <script type="text/javascript">
+       /*
+       //Javascript nativo
+       //opção01 
+       window.onload = function(){
+        document.getElementById('a').onclick = mudarcor;
+       }
+       function mudarcor(){
+            document.getElementById('titulo').style='color:#ff0000;';
+       }//01
+       //---------------1----------------
+       
+       /*
+       //opção2
+       window.onload = function(){
+        document.getElementById('a').addEventListener('click', mudarcor2)
+       }
+       function mudarcor2(){
+        document.getElementById('titulo').style='color:violet;'
+       }//02
+       */
+       //--------------2---------------
+       
+       /*
+       //opção03
+       function alterartitulo(){
+            document.getElementById('titulo').style.color = '#00ff00';
+        }//03
+        */
+        //---------------3--------------
+        
+        //Jquery
+          $(document).ready(function(){
+            $("a").click(function(){
+                $("#titulo")
+                .css("color", "#0000ff")
+                .text("curso de Jquery")
+                .hide()
+                .fadeToggle()
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Hello, world!</h1>
+    <a href="#" id="a" onclick="alterartitulo()" >Executar Javascript</a>
+</body>
+</html>

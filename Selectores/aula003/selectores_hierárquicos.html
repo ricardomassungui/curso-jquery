@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/scripts/selectores_hierárquicos.js"></script>
+    <title>Selectores simples Jquery</title>
+</head>
+<body>
+    <!--
+        Selectores Hierárquicos (compostos)
+            Àrvore DOM
+            - Pai
+            - Filho
+            - Irmão
+            - Adjacente
+    -->
+    <h2>Àrvore</h2>
+    <div>
+        <ul>
+            <li>
+                primeiro
+                <span style="color:blue;">Item</span>
+                <ul>
+                    <li id="Item1_1">Item 1.1</li>
+                    <li id="Item1_2">Item 1.2</li>
+                    <li id="Item1_3">Item 1.3
+                        <ul>
+                            <li id="Item1_3_1">Item 1.1</li>
+                        </ul>
+                    </li>
+                        
+                </ul>
+            </li>
+            <li id="Item2">Item 2</li>
+            <li id="Item3">Item 3</li>
+        </ul>
+    </div> 
+</body>
+</html>

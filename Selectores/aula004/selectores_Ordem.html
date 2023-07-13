@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/scripts/selectores_ordem.js"></script>
+
+    <title>Selectores simples Jquery</title>
+    <style>
+        thead th{
+            background-color:#000;
+            color: #fff;
+        }
+        table, td, th{
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Selectores de ordem (Ordem no index)
+          :first
+          :last
+          :not()
+          :even
+          :odd
+          :eq()
+          :gt()
+          :lt()
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Filmes</th>
+                <th scope="col">Genêneo</th>
+                <th scope="col">Duração</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Chico Xavier</td>
+                <td>drama</td>
+                <td>124</td>
+            </tr>
+            <tr>
+                <td> scope="row"O bom amado</td>
+                <td>Comédia</td>
+                <td>132</td>
+            </tr>
+            <tr>
+                <td scope="row">O auto da Compadência </td>
+                <td>Comédia</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td scope="row">Carandiru</td>
+                <td>Crime</td>
+                <td>145</td>
+            </tr>
+            <tr>
+                <td scope="row">Central do brasil</td>
+                <td>drama</td>
+                <td>113</td>
+            </tr>
+            <tr>
+                <td scope="row">Cidade de Deus</td>
+                <td>Crime</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td scope="row">Deus é Brasileiro</td>
+                <td>Comédia</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td scope="row">Dona Flora e seus dois Maridos</td>
+                <td>Comédia</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td scope="row">Lula o Filho do Brasil</td>
+                <td>Biográfico</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td scope="row">Tropa de Elite</td>
+                <td>Ação</td>
+                <td>118</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
